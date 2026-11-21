@@ -1,0 +1,10 @@
+[component]
+name = "SigmaOS-runtime-support"
+description = "Shared runtime primitives extracted from SigmaOS-system: config, error, crypto entropy, klib shims, service, orchestrator"
+
+[contract]
+provides = ["runtime-config", "component-error", "crypto-entropy", "klib", "service-lifecycle", "orchestrator"]
+depends_on = ["serde", "thiserror", "anyhow", "log"]
+
+[maturity]
+level = "stable"
